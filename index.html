@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Exercise</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+  <div class="l-grid-container">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+        <div class="container-fluid align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="./img/panda.svg" width="30" height="30" class="panda-logo d-inline-block align-top" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarbootsrap"
+            aria-controls="navbarbootsrap" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarbootsrap">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/watch?v=_NNYI8VbFyY" href="#">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-disabled="true">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <a href="https://www.youtube.com/watch?v=PGNiXGX2nLU">
+              <img src="./img/thisisfine.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                height="500" loading="lazy">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Welcome fellow padawan!
+            </h1>
+            <p class="lead mb-3">
+              Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would
+              tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could
+              use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that
+              he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many
+              abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing
+              his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he
+              knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not
+              himself.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" onClick="someEvent()" class="btn btn-primary btn-lg px-4 me-md-2">
+                Click here!
+              </button>
+              <button type="button" onClick="someEvent()" class="btn btn-outline-secondary btn-lg px-4">
+                Click me!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-md-4 px-4">
+            <a href="https://www.youtube.com/watch?v=6xKWiCMKKJg">
+              <img src="./img/venusaur.jpg" class="img-fluid mb-2 py-4" alt="Venusaur Pokemon Trading Card Image">
+              <h3>Venusaur</h3>
+              <p>"The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."</p>
+            </a>
+          </div>
+          <div class="col-md-4 px-4">
+            <a href="https://www.youtube.com/watch?v=6xKWiCMKKJg">
+              <img src="./img/charizard.jpg" class="img-fluid mb-2 py-4" alt="Charizard Pokemon Trading Card Image">
+              <h3>Charizard</h3>
+              <p>"Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally."</p>
+            </a>
+          </div>
+          <div class="col-md-4 px-4">
+            <a href="https://www.youtube.com/watch?v=6xKWiCMKKJg">
+              <img src="./img/blastoise.jpg" class="img-fluid mb-2 py-4" alt="Blastoise Pokemon Trading Card Image">
+              <h3>Blastoise</h3>
+              <p>"A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles."</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p>Follow us:</p>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <p class="mt-3 mb-0">&copy; 2025 m3me 3dG3 L0r|) Website </p>
+      </div>
+
+    </footer>
+  </div>
+  <script>
+    function someEvent() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+  </script>
+</body>
+
+</html>
